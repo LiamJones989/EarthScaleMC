@@ -2,22 +2,102 @@
 <html>
 <head>
 <title>EarthScaleMC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ffcf54, #ffb82a);
+    color: #442200;
+    text-align: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 80%;
+    max-width: 650px;
+    margin-top: 30px;
+    filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.25));
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #7c3aed;
+    padding: 14px 24px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+    box-shadow: 0px 4px 0px #4f2298;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 0px #4f2298;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.55);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 0px;
+    text-shadow: 1px 2px #ffffff66;
+}
+
+.sub {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #5a3a00;
+}
+
+</style>
 </head>
-<body style="font-family:Arial;background:#0a0f1a;color:white;padding:20px;">
-<h1>EarthScaleMC</h1>
-<p>1:1000 recreation of Earth • Java + Bedrock Crossplay</p>
+<body>
 
-<h2>Join Links</h2>
-<ul>
-  <li><a style="color:#7c3aed;" href="https://discord.gg/ungqkgvU">Discord</a></li>
-  <li><a style="color:#7c3aed;" href="http://50.115.8.176:29622/#world:844">Live Bluemap</a></li>
-</ul>
+<div class="container">
 
-<h2>Server Info</h2>
-<p><b>IP:</b> your.server.ip.here</p>
-<p><b>Version:</b> Java 1.21 / Bedrock Supported</p>
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
 
-<h2>About</h2>
-<p>EarthScaleMC is a 1:1000 scale recreation of Earth where players create countries, go to war, build lore, and explore a massive world.</p>
+    <h1>EarthScaleMC</h1>
+    <p class="sub">1:1000 Earth • Java + Bedrock • Countries • War • Lore</p>
+
+    <!-- BUTTONS -->
+    <a class="btn" href="https://discord.gg/ungqkgvU">Join Discord</a>
+    <a class="btn" href="http://50.115.8.176:29622/#world:844">Live Map</a>
+
+    <div class="card">
+        <h2>Server Info</h2>
+        <p><b>Java IP:</b> your.server.ip.here</p>
+        <p><b>Bedrock Port:</b> (if you use Geyser, put the port)</p>
+
+        <h2>About the Server</h2>
+        <p>
+            EarthScaleMC is a massive 1:1000 scale recreation of Earth where players form countries,
+            build cities, wage wars, create lore, and shape the world through diplomacy and strategy.
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
