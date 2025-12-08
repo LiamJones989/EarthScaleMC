@@ -1,143 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EarthScaleMC</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow-x: hidden;
-      background: #0b0b0b;
-    }
+<title>EarthScaleMC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-    /* Particle background */
-    #particles {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ffcf54, #ffb82a);
+    color: #442200;
+    text-align: center;
+}
 
-    nav {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(5px);
-    }
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
 
-    nav a {
-      color: #00eaff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* LOGO */
+.logo {
+    width: 80%;
+    max-width: 650px;
+    margin-top: 30px;
+    filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.25));
+}
 
-    section {
-      padding: 60px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #7c3aed;
+    padding: 14px 24px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+    box-shadow: 0px 4px 0px #4f2298;
+}
 
-    h1, h2 { color: #00eaff; }
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 0px #4f2298;
+}
 
-    .plugin-list b { color: #6ef76e; }
-  </style>
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.55);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 0px;
+    text-shadow: 1px 2px #ffffff66;
+}
+
+.sub {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #5a3a00;
+}
+
+</style>
 </head>
 <body>
 
-<canvas id="particles"></canvas>
+<div class="container">
 
-<nav>
-  <a href="#plugins">Plugins</a>
-  <a href="#rules">Rules</a>
-  <a href="#staff">Staff</a>
-</nav>
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
 
-<section id="plugins">
-  <h1>Server Plugins</h1>
-  <p>Click a plugin to view how to use it.</p>
-  <ul class="plugin-list">
-    <li><b>AdvancedTeleport</b> – /tp, /sethome, /home</li>
-    <li><b>Bluemap</b> – Live world map</li>
-    <li><b>Bluemap-Towny</b> – Towny overlays on map</li>
-    <li><b>CMILib</b> – Required library</li>
-    <li><b>CrateReloaded</b> – Crate keys /crates</li>
-    <li><b>Essentials</b> – Main commands /spawn /msg /warp</li>
-    <li><b>floodgate</b> – Bedrock support</li>
-    <li><b>Geyser-Spigot</b> – Bedrock crossplay</li>
-    <li><b>Jobs</b> – /jobs join miner etc.</li>
-    <li><b>LuckPerms</b> – Permissions /lp editor</li>
-    <li><b>MrLibCore</b></li>
-    <li><b>MrUltimateShop</b> – Player shops</li>
-    <li><b>MTVehicles</b> – Cars /vehicle</li>
-    <li><b>MyCommand</b> – Custom commands</li>
-    <li><b>Orebfuscator</b> – Anti-Xray</li>
-    <li><b>Shopkeepers</b> – NPC shops</li>
-    <li><b>SlotMachine</b></li>
-    <li><b>Towny</b> – Town claiming /town /nation</li>
-    <li><b>TownyFlight</b> – Flight in towns</li>
-    <li><b>Vault</b> – Economy bridge</li>
-    <li><b>WorldBorder</b></li>
-    <li><b>WorldEdit</b> – //wand</li>
-  </ul>
-</section>
+    <h1>EarthScaleMC</h1>
+    <p class="sub">1:1000 Earth • Java + Bedrock • Countries • War • Lore</p>
 
-<section id="rules">
-  <h2>Server Rules</h2>
-  <ol>
-    <li>Respect Others: Treat everyone with respect; no bullying, harassment, or discrimination.</li>
-    <li>No Cheating/Hacking: Don't use mods, hacks, or exploits for unfair advantages.</li>
-    <li>Follow Staff: Listen to and respect server moderators and administrators.</li>
-    <li>No Spamming/Advertising: Keep chat clean and relevant; no self-promotion.</li>
-  </ol>
-</section>
+    <!-- BUTTONS -->
+    <a class="btn" href="https://discord.gg/ungqkgvU">Join Discord</a>
+    <a class="btn" href="http://50.115.8.176:29622/#world:844">Live Map</a>
 
-<section id="staff">
-  <h2>Staff Team</h2>
-  <p><b>OWNER:</b> ForkandSpoon3</p>
-  <p><b>Head of Staff:</b> BeegThic2</p>
-</section>
+    <div class="card">
+        <h2>Server Info</h2>
+        <p><b>Java IP:</b> your.server.ip.here</p>
+        <p><b>Bedrock Port:</b> (if you use Geyser, put the port)</p>
 
-<script>
-// simple floating particles
-const canvas = document.getElementById('particles');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+        <h2>About the Server</h2>
+        <p>
+            EarthScaleMC is a massive 1:1000 scale recreation of Earth where players form countries,
+            build cities, wage wars, create lore, and shape the world through diplomacy and strategy.
+        </p>
+    </div>
 
-let particles = [];
-
-for (let i = 0; i < 100; i++) {
-  particles.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    s: 1 + Math.random() * 2,
-    v: 0.3 + Math.random() * 0.6
-  });
-}
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = 'white';
-  particles.forEach(p => {
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.s, 0, Math.PI * 2);
-    ctx.fill();
-    p.y += p.v;
-    if (p.y > canvas.height) p.y = 0;
-  });
-  requestAnimationFrame(animate);
-}
-animate();
-</script>
+</div>
 
 </body>
 </html>
