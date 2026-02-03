@@ -134,18 +134,17 @@ p {
 
 .staff-top {
     display: flex;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
 }
 
+/* STAFF SKINS — SAME BEHAVIOR AS LOGO */
 .staff-skin {
-    width: 74px;
-    height: 74px;
+    width: 90px;
+    height: auto;
     border-radius: 12px;
-    background: rgba(0,0,0,0.08);
-    object-fit: cover;
+    filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.25));
     flex: 0 0 auto;
-    box-shadow: 0px 3px 0px rgba(0,0,0,0.15);
 }
 
 .staff-name {
@@ -236,18 +235,15 @@ p {
         <p>Use common sense</p>
     </div>
 
-    <!-- STAFF (EDIT THIS SECTION) -->
+    <!-- STAFF -->
     <div class="card" id="staff">
         <h2>Staff</h2>
-        <p class="small">Edit the staff cards below — replace names, usernames, and the skin image links.</p>
 
         <div class="staff-grid">
 
-            <!-- STAFF MEMBER TEMPLATE -->
             <div class="staff-card">
                 <div class="staff-top">
-                    <!-- Put a skin image URL here (png/jpg). You can upload images into your repo and link them like: staff/yourname.png -->
-                    <img class="staff-skin" src="staff/skin1.png" alt="Minecraft Skin">
+                    <img class="staff-skin" src="skin1.png">
                     <div>
                         <p class="staff-name">Fork</p>
                         <p class="staff-role">Owner</p>
@@ -261,42 +257,28 @@ p {
 
             <div class="staff-card">
                 <div class="staff-top">
-                    <img class="staff-skin" src="staff/skin2.png" alt="Minecraft Skin">
+                    <img class="staff-skin" src="skin2.png">
                     <div>
                         <p class="staff-name">Beegthic</p>
-                        <p class="staff-role">HeadofStaff</p>
+                        <p class="staff-role">Head of Staff</p>
                     </div>
                 </div>
                 <div class="staff-info">
-                    <div><span>In-game:</span> StaffIGN</div>
+                    <div><span>In-game:</span> Beegthic</div>
                     <div><span>Discord:</span> beegthic</div>
                 </div>
             </div>
 
             <div class="staff-card">
                 <div class="staff-top">
-                    <img class="staff-skin" src="staff/skin3.png" alt="Minecraft Skin">
-                    <div>
-                        <p class="staff-name">Staff Name</p>
-                        <p class="staff-role">Moderator</p>
-                    </div>
-                </div>
-                <div class="staff-info">
-                    <div><span>In-game:</span> StaffIGN</div>
-                    <div><span>Discord:</span> staffdiscord</div>
-                </div>
-            </div>
-
-            <div class="staff-card">
-                <div class="staff-top">
-                    <img class="staff-skin" src="staff/skin4.png" alt="Minecraft Skin">
+                    <img class="staff-skin" src="skin3.png">
                     <div>
                         <p class="staff-name">Yummypie_hi</p>
                         <p class="staff-role">Helper</p>
                     </div>
                 </div>
                 <div class="staff-info">
-                    <div><span>In-game:</span> StaffIGN</div>
+                    <div><span>In-game:</span> Yummypie_hi</div>
                     <div><span>Discord:</span> yummypie_hi</div>
                 </div>
             </div>
@@ -310,7 +292,7 @@ p {
         <p>Support EarthScaleMC and help keep the server running ❤️</p>
         <p><b>Venmo:</b> @Liam-Jones-74</p>
         <p><b>Cash App:</b> $LiamJones67</p>
-        <p class="small">Put your username in the note so we can thank you! And even maybe a little gift!</p>
+        <p class="small">Put your username in the note so we can thank you!</p>
     </div>
 
     <!-- LINKS -->
